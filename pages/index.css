@@ -1,32 +1,145 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e0e0e0;
+  background-color: #e5e5e5; /* color neutro recomendado */
 }
 
 .page {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
+/* ============================
+   HEADER
+   ============================ */
+
 .header {
-  height: 100px;
-  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.header__top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.content {
-  min-height: 600px;
+.header__logo {
+  width: 140px;
+}
+
+/* NAV */
+.nav__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* TITULO PRINCIPAL */
+.header__title {
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 40px;
+}
+
+.header__span-accent {
+  color: #6b4f30; /* tono café */
+}
+
+/* DESCRIPCIÓN DEL HEADER */
+.header__description {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* IMAGEN DEL HEADER */
+.header__image {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 12px;
+}
+
+/* FOOTER DEL HEADER */
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.header__paragraph {
+  font-size: 16px;
+}
+
+/* ============================
+   SECCIÓN RECIPES
+   ============================ */
+
+.recipes {
+  padding: 40px 20px;
   background-color: #ffffff;
 }
+
+.recipes__title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.recipes__subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* CONTENEDOR DE VIDEOS */
+.recipes__videos {
+  display: flex;
+  gap: 30px;
+}
+
+/* RELACIÓN DE ASPECTO 16:9 */
+.recipes__video-item {
+  width: 100%;
+  max-width: 400px;
+}
+
+.recipes__iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+}
+
+.recipes__video-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ============================
+   FOOTER BASE
+   ============================ */
 
 .footer {
   height: 80px;
   background-color: #f1f1f1;
+  margin-top: 40px;
+}
+
+.footer__nav {
+  padding: 20px;
 }
