@@ -1,36 +1,49 @@
+/* ============ BASE ============ */
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #e5e5e5; /* color neutro recomendado */
+  background-color: #f2f2f2;
 }
 
 .page {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
-
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
-/* ============================
-   HEADER
-   ============================ */
+/* ============ HEADER ============ */
 
 .header {
-  padding: 20px;
+  position: relative;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  padding: 32px 80px 40px;
+  background-color: #ffffff;
+  /* usa la imagen de fondo del proyecto */
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
+/* fila superior: logo + nav */
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .header__logo {
-  width: 140px;
+  display: block;
 }
 
 /* NAV */
@@ -38,108 +51,153 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-
   display: flex;
-  gap: 20px;
+  gap: 32px;
 }
 
 .nav__link {
+  font-size: 12px;
+  line-height: 16px;
   text-decoration: none;
-  color: #000;
-  font-weight: 500;
+  color: #000000;
 }
 
-/* TITULO PRINCIPAL */
+/* TÍTULO PRINCIPAL */
+
 .header__title {
-  font-size: 36px;
-  line-height: 44px;
-  margin-top: 40px;
+  margin: 0 0 28px;
+  max-width: 709px;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  color: #000000;
 }
 
 .header__span-accent {
-  color: #6b4f30; /* tono café */
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
 }
 
-/* DESCRIPCIÓN DEL HEADER */
+/* DESCRIPCIÓN */
+
 .header__description {
-  max-width: 600px;
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 26px;
+  max-width: 683px;
+  margin: 0 0 40px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
 }
 
-/* IMAGEN DEL HEADER */
+/* IMAGEN ILUSTRACIÓN DERECHA */
+
 .header__image {
-  width: 100%;
-  margin-top: 30px;
-  border-radius: 12px;
+  position: absolute;
+  top: 140px;
+  right: 80px;
+  width: 646px;
+  height: auto;
 }
 
-/* FOOTER DEL HEADER */
+/* FOOTER DEL HEADER: HORARIO Y DIRECCIÓN */
+
 .header__footer {
+  margin-top: auto;
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  align-items: flex-start;
 }
 
 .header__paragraph {
-  font-size: 16px;
+  margin: 0;
+  max-width: 420px;
+  color: #555555;
 }
 
-/* ============================
-   SECCIÓN RECIPES
-   ============================ */
+.header__paragraph-heading {
+  font-weight: 500;
+}
 
-.recipes {
-  padding: 40px 20px;
+/* ============ MAIN / CONTENT ============ */
+
+.content {
   background-color: #ffffff;
 }
 
+/* ============ RECIPES ============ */
+
+.recipes {
+  padding: 100px 80px 120px;
+  background-color: #0a2750;
+  color: #ffffff;
+  background-image: url("../images/background_recipes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .recipes__title {
-  font-size: 28px;
-  margin-bottom: 10px;
+  margin: 0 0 24px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .recipes__subtitle {
-  font-size: 18px;
-  margin-bottom: 30px;
+  margin: 0 0 80px;
+  max-width: 580px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /* CONTENEDOR DE VIDEOS */
+
 .recipes__videos {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
-/* RELACIÓN DE ASPECTO 16:9 */
+/* Cada video mantiene relación 16:9 */
+
 .recipes__video-item {
-  width: 100%;
-  max-width: 400px;
+  flex: 1;
+  position: relative;
+}
+
+.recipes__video-item::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 */
 }
 
 .recipes__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
-  border-radius: 8px;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
 }
 
 .recipes__video-caption {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 14px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-/* ============================
-   FOOTER BASE
-   ============================ */
+/* ============ FOOTER ============ */
 
 .footer {
   height: 80px;
   background-color: #f1f1f1;
-  margin-top: 40px;
-}
-
-.footer__nav {
-  padding: 20px;
 }
