@@ -131,9 +131,11 @@ body {
 
 /* ============ RECIPES ============ */
 
+/* ========== SECCIÓN RECIPES ========== */
+
 .recipes {
-  padding: 100px 80px 120px;
-  background-color: #0a2750;
+  padding: 100px 80px 120px; /* espacio arriba y abajo como el brief */
+  background-color: #0a2850; /* azul del brief */
   color: #ffffff;
   background-image: url("../images/background_recipes.svg");
   background-repeat: no-repeat;
@@ -151,32 +153,35 @@ body {
 
 .recipes__subtitle {
   margin: 0 0 80px;
-  max-width: 580px;
+  max-width: 580px; /* como en el esquema */
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* CONTENEDOR DE VIDEOS */
+/* Contenedor de los dos videos */
 
 .recipes__videos {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1000px; /* para que no se abran demasiado */
+  margin: 0 auto; /* centra el bloque en la sección */
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 40px; /* espacio entre los dos videos */
 }
 
-/* Cada video mantiene relación 16:9 */
+/* Cada video */
 
 .recipes__video-item {
   flex: 1;
   position: relative;
 }
 
+/* Truco para mantener relación 16:9 */
+
 .recipes__video-item::before {
   content: "";
   display: block;
-  padding-top: 56.25%; /* 16:9 */
+  padding-top: 56.25%; /* 16/9 = 0.5625 → 56.25% */
 }
 
 .recipes__iframe {
@@ -188,6 +193,8 @@ body {
   border: 0;
   border-radius: 12px;
 }
+
+/* Texto debajo de cada video */
 
 .recipes__video-caption {
   margin-top: 16px;
