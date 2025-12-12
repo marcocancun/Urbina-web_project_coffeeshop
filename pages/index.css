@@ -181,6 +181,18 @@ body {
   color: #ffffff;
 }
 
+.reservation {
+  /*estilos del bloque de reservation*/
+}
+.contacts {
+  /*estilos del bloque de contacts*/
+}
+.reservation__title {
+  /*estilos titulo de reservation*/
+}
+.contacts__title {
+  /*estilos del titulo contacs*/
+}
 /* ============ FOOTER (placeholder) ============ */
 
 .footer {
