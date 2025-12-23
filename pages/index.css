@@ -181,17 +181,24 @@ body {
   color: #ffffff;
 }
 
+/* ============ RESERVATION ============ */
+
 .reservation {
-  /*estilos del bloque de reservation*/
+  padding: 100px 0 120px;
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.contacts {
-  /*estilos del bloque de contacts*/
-}
+
 .reservation__title {
-  /*estilos titulo de reservation*/
-}
-.contacts__title {
-  /*estilos del titulo contacs*/
+  margin: 0 0 80px;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
 }
 /* ============ FOOTER (placeholder) ============ */
 
