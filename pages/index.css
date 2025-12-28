@@ -1,3 +1,5 @@
+@import url("../blocks/page.css");
+@import url("../blocks/footer.css");
 /* ============ BASE ============ */
 
 body {
@@ -6,7 +8,7 @@ body {
   background-color: #f2f2f2;
 }
 
-.page {
+/*.page {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -14,7 +16,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #ffffff;
-}
+}*/
 
 /* ============ HEADER ============ */
 
@@ -229,7 +231,7 @@ body {
 }
 /* ============ FOOTER (placeholder) ============ */
 
-.footer {
+/*.footer {
   height: 80px;
   background-color: #f1f1f1;
-}
+}*/
