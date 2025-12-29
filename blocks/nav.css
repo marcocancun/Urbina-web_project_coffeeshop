@@ -1,0 +1,19 @@
+.nav__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.nav__link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}

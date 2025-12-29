@@ -1,0 +1,82 @@
+.header {
+  position: relative;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  padding: 32px 80px 40px;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* fila superior: logo + nav */
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.header__logo {
+  display: block;
+}
+.header__title {
+  margin: 0 0 28px;
+  max-width: 709px;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+/* DESCRIPCIÓN (BRIEF: Noto Serif italic) */
+.header__description {
+  max-width: 683px;
+  margin: 0 0 40px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* IMAGEN ILUSTRACIÓN DERECHA */
+.header__image {
+  position: absolute;
+  top: 140px;
+  right: 80px;
+  width: 646px;
+  height: auto;
+}
+
+/* FOOTER DEL HEADER: HORARIO Y DIRECCIÓN */
+.header__footer {
+  margin-top: auto;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__paragraph {
+  margin: 0;
+  max-width: 420px;
+  color: #6f6f6f; /* BRIEF */
+}
+
+.header__paragraph-heading {
+  font-weight: 500;
+}
