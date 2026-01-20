@@ -1,3 +1,5 @@
+/* ============ RESERVATION ============ */
+
 .reservation {
   padding: 100px 0 120px;
   background-color: #d9e7ff;
@@ -7,19 +9,21 @@
   background-size: cover;
 }
 
-  .reservation__title {
-  margin-top: 0;
-  margin-bottom: 80px;
-
-  margin-left: auto;
-  margin-right: auto;
-
+/* Contenedor centrado */
+.reservation__content {
   max-width: 385px;
+  margin: 0 auto;
+}
+
+/* Título */
+.reservation__title {
+  margin: 0 0 80px;
 
   font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   text-align: center;
-  }
+  color: #000000;
+}
+
